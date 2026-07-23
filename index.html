@@ -35,7 +35,7 @@
     <section id="sobre-mi" class="about">
         <div class="container">
             <h2>Sobre Mí</h2>
-            <p>Soy un joven artísta y productor mexicano independiente apasionado por la música electrónica, mi carrea musical apenas comienza y mi próximo objetivo es ser un DJ reconocido, esta página es creada por mi mismo con el objetivo de pronunciarme al mundo mostrando mi música, gracias por el apoyo.</p>
+            <p>Soy un joven artísta y productor mexicano independiente apasionado por la música electrónica, mi carrea musical apenas comienza y mi próximo objetivo es ser un DJ reconocido, esta p[...]
         </div>
     </section>
 
@@ -105,11 +105,12 @@
     <section id="contacto" class="contact">
         <div class="container">
             <h2>Contacto</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu email" required>
-                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <input type="email" id="email" placeholder="Tu email" required>
+                <textarea id="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
                 <button type="submit" class="btn btn-primary">Enviar</button>
+                <p id="statusMessage" class="status-message"></p>
             </form>
         </div>
     </section>
@@ -119,6 +120,8 @@
         <p>&copy; 2024 CZStudio. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
