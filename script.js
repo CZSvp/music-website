@@ -1,5 +1,5 @@
 // Inicializar EmailJS
-emailjs.init('SERVICE_ID_PLACEHOLDER'); // Se actualizará con tu ID de servicio
+emailjs.init('iohPLR9beOzr5RHDH');
 
 // Smooth scrolling para los enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -34,7 +34,7 @@ if (contactForm) {
         };
         
         // Enviar email
-        emailjs.send('SERVICE_ID_PLACEHOLDER', 'TEMPLATE_ID_PLACEHOLDER', templateParams)
+        emailjs.send('service_ihth683', 'template_1id9z2e', templateParams)
             .then(function(response) {
                 statusMessage.textContent = '¡Gracias por tu mensaje! Me pondré en contacto pronto.';
                 statusMessage.style.color = '#4CAF50';
